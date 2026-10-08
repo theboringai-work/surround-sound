@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "speech-event-detector"
+version = "1.0.0"
+description = "Detect non-verbal vocal sounds and background noise with timestamps, and merge them into ASR transcripts"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["torch>=2.1", "torchaudio>=2.1", "numpy", "scipy", "safetensors>=0.4", "huggingface_hub>=0.23"]
+
+[project.optional-dependencies]
+whisper = ["openai-whisper"]
+transformers = ["transformers>=4.40"]
+train = ["pandas", "pyarrow>=14", "soundfile", "tqdm", "psutil", "jupyter"]
+test = ["pytest"]
+
+[project.scripts]
+sed-infer = "sed.cli:main"
+
+[tool.setuptools]
+packages = ["sed"]

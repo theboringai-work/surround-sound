@@ -1,0 +1,10 @@
+# inference (also needs the ffmpeg binary on PATH)
+torch>=2.1
+torchaudio>=2.1
+numpy
+scipy
+safetensors>=0.4
+huggingface_hub>=0.23
+# transcripts: openai-whisper (preferred) or transformers (fallback)
+# openai-whisper
+# transformers>=4.40

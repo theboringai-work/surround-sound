@@ -1,0 +1,8 @@
+-r requirements.txt
+pandas
+pyarrow>=14
+soundfile
+tqdm
+psutil
+jupyter
+openai-whisper      # Step 11 demo only
