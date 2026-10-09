@@ -1,4 +1,3 @@
-# Speech Event Detector 
 
 <p align="center">
   <a href="https://huggingface.co/spaces/theboringai-work/surround-sound">
