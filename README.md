@@ -9,6 +9,20 @@
   </a>
 </p>
 
+
+<p align="center">
+  <a href="https://huggingface.co/spaces/theboringai-work/surround-sound">
+    <img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Try%20Live%20Demo-yellow?style=for-the-badge" alt="Try Live Demo">
+  </a>
+</p>
+
+### 🚀 Try the Demo
+
+- **Hugging Face Space:** [theboringai-work/surround-sound](https://huggingface.co/spaces/theboringai-work/surround-sound)
+- **Model / Demo:** [Open Surround Sound on Hugging Face](https://huggingface.co/spaces/theboringai-work/surround-sound)
+- **Source Code:** [GitHub Repository](https://github.com/theboringai-work/surround-sound)
+
+
 Detects **54 kinds of non-verbal and background sounds**, with start and end times, in any audio, and merges them into a Whisper transcript. An illustrative example:
 
 ```
@@ -18,7 +32,7 @@ Hey [cough] there, can you tell me where I am going? [breath] So I want to under
 - `[tag]`: a sound the **speaker** makes (breath, cough, laugh, sigh, sniff, …). It's placed inline where the sound starts.
 - `<tag> … </tag>`: a **background** sound (horn, music, dog bark, siren, rain, …), wrapped around the words it overlaps. A lone `<tag>` means no words fall inside it.
 
-The model is a 5.8M-parameter CNN + Transformer that runs on log-mel spectrograms and outputs a probability for each class every 40 ms. It runs about 39× faster than real time on 8 CPU threads and 380× on a T4 GPU (measured on 3 min of audio). Experiment 1 (`exp1`), the first released model, was trained on material drawn from seven public datasets: about 168 h of real annotated training recordings (plus 17 h held out for validation), 65 h of event crops, 21 h of speech beds and 6 h of background noise, with synthetic mixing and augmentation. The full method and results are in the paper in `paper/`.
+The model is a 5.8M-parameter CNN + Transformer that runs on log-mel spectrograms and outputs a probability for each class every 40 ms. It runs about 39× faster than real time on 8 CPU threads and 380× on a T4 GPU (measured on 3 min of audio). The first released model, was trained on material drawn from seven public datasets: about 168 h of real annotated training recordings (plus 17 h held out for validation), 65 h of event crops, 21 h of speech beds and 6 h of background noise, with synthetic mixing and augmentation. .
 
 ## Contents
 - [Quick start](#quick-start)
