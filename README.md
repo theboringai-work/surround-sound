@@ -1,6 +1,14 @@
-# Speech Event Detector — Experiment 1
+# Speech Event Detector 
 
-**Internal repository (private).** The public release lives on the Hugging Face Hub; see [Releasing](#releasing-to-the-hugging-face-hub).
+<p align="center">
+  <a href="https://huggingface.co/spaces/theboringai-work/surround-sound">
+    <img
+      src="assets/surround-sound-banner.png"
+      alt="Surround Sound - Speech Event Detection"
+      width="100%"
+    />
+  </a>
+</p>
 
 Detects **54 kinds of non-verbal and background sounds**, with start and end times, in any audio, and merges them into a Whisper transcript. An illustrative example:
 
@@ -27,7 +35,6 @@ The model is a 5.8M-parameter CNN + Transformer that runs on log-mel spectrogram
 - [Repository layout](#repository-layout)
 - [Data and licensing](#data-and-licensing)
 - [Known limitations](#known-limitations)
-- [Releasing to the Hugging Face Hub](#releasing-to-the-hugging-face-hub)
 - [Tests](#tests)
 
 ## Quick start
