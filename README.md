@@ -81,7 +81,7 @@ times, probs = det.frame_probs(load_audio("call.mp3"))           # raw per-class
 text = rich_transcript(words, clean(words, events))               # clean() drops a laugh the ASR already wrote as "haha"
 ```
 
-`Detector.from_pretrained("the-psyche/speech-event-detector")` loads the published Hub version in the same way.
+`Detector.from_pretrained("theboringai-work/surround-sound")` loads the published Hub version in the same way.
 
 ## Command-line options
 
@@ -254,11 +254,6 @@ tests/                     pytest checks for the checkpoints, post-processing an
 - **Tag placement in transcripts.** It depends on Whisper's word timestamps, which can be off by a few hundred milliseconds.
 - **Stationary hum.** Steady hum can still trigger `machine`/`fan` on some microphones. Use `--hide machine,fan` if it does.
 
-## Releasing to the Hugging Face Hub
-
-The model repo is **[the-psyche/speech-event-detector](https://huggingface.co/the-psyche/speech-event-detector)**. It is currently **private**; make it public under the repo's *Settings* when ready. `../speech-event-detector-hf/` is its source: model card, `model.safetensors` + `config.json`, the two threshold profiles, `detect_config.json` and the inference code. The evaluation reports and training log stay in this repo (`checkpoints/`). To publish an update:
-1. Update the files in `../speech-event-detector-hf/`. The weights and thresholds come from `checkpoints/`; the inference code is a copy of `sed/`.
-2. Upload: `hf upload the-psyche/speech-event-detector ../speech-event-detector-hf . --exclude ".gitattributes"` (logged in with `hf auth login`, or with `HF_TOKEN` set).
 
 The model card's license is `cc-by-nc-sa-4.0` (see [Data and licensing](#data-and-licensing)).
 
