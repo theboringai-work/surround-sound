@@ -1,8 +1,8 @@
 # Examples: how the model performs
 
-Eight **held-out** clips, two from each evaluation source, were run through the released model. None of them was used for training. They were chosen by a fixed rule, not by hand: for each source, the first two held-out clips in storage order that last 5–12 s (NonverbalTTS: 4–12 s; AudioSet-Strong: its 10 s clips) and carry at least one annotated event (Vaani and AudioSet-Strong: at least two event classes). So they show typical behaviour, good and bad. No audio is redistributed here; `paper/data/examples.json` has the full outputs.
+Eight **held-out** clips, two from each evaluation source, were run through the released model. None of them was used for training. They were chosen by a fixed rule, not by hand: for each source, the first two held-out clips in storage order that last 5–12 s (NonverbalTTS: 4–12 s; AudioSet-Strong: its 10 s clips) and carry at least one annotated event (Vaani and AudioSet-Strong: at least two event classes). So they show typical behaviour, good and bad. No audio is redistributed here.
 
-![Worked examples](../paper/figures/fig_examples.png)
+![Worked examples](fig_examples.png)
 
 *Orange: annotated events. Blue: events detected with the default `sensitive` profile. "found" counts annotated events overlapped by a detection of the same class.*
 
