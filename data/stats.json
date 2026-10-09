@@ -1,0 +1,389 @@
+{
+ "listed_events": 55,
+ "speaker_events": 21,
+ "background_events": 34,
+ "min_events": 80,
+ "dropped_classes": {
+  "click": 47
+ },
+ "n_classes": 54,
+ "n_inline_trained": 20,
+ "clips": {
+  "nonverbal38k": 38718,
+  "vaani": 90637,
+  "nonverbaltts": 6256,
+  "audioset": 93609,
+  "openslr99": 727,
+  "dnc": 4377,
+  "demand_envs": 18
+ },
+ "hours": {
+  "nonverbal38k": 130.64783258101852,
+  "vaani": 154.5896853450132,
+  "nonverbaltts": 17.586766493055556,
+  "audioset": 260.025
+ },
+ "vaani_quality": {
+  "unverified_timestamps": 61642,
+  "no_timestamps": 17884,
+  "verified_timestamps": 11111
+ },
+ "vaani_raw_tags": 319,
+ "vaani_tag_outcome": {
+  "mapped": 99320,
+  "ignored": 7502,
+  "dropped": 70
+ },
+ "audioset_event_names": 455,
+ "audioset_names_mapped": 220,
+ "audioset_files": {
+  "train": 216,
+  "test": 39
+ },
+ "audioset_clips_split": {
+  "train": 79564,
+  "test": 14045
+ },
+ "nv_language": {
+  "ZH": 36925,
+  "EN": 1793
+ },
+ "nv_label": {
+  "sigh": 9783,
+  "sniff": 7321,
+  "laughing": 6912,
+  "coughing": 5940,
+  "throatclearing": 4909,
+  "breath": 2162,
+  "crying": 753,
+  "gasp": 578,
+  "yawn": 269,
+  "snore": 91
+ },
+ "tts_data_name": {
+  "VoxCeleb": 4452,
+  "Expresso": 1804
+ },
+ "tts_events": 8620,
+ "tts_clips_with_events": 4878,
+ "dnc_kinds": {
+  "quiet": 1405,
+  "TV": 795,
+  "autos": 692,
+  "Radio": 305,
+  "Music": 229,
+  "WashingMachine": 221,
+  "WaterHeater": 164,
+  "Dishwasher": 151,
+  "CoffeeMachine": 143,
+  "people": 98,
+  "VacuumCleaner": 89,
+  "Microwave": 85
+ },
+ "demand_envs": [
+  "DKITCHEN",
+  "DLIVING",
+  "DWASHING",
+  "NFIELD",
+  "NPARK",
+  "NRIVER",
+  "OHALLWAY",
+  "OMEETING",
+  "OOFFICE",
+  "PCAFETER",
+  "PRESTO",
+  "PSTATION",
+  "SCAFE",
+  "SPSQUARE",
+  "STRAFFIC",
+  "TBUS",
+  "TCAR",
+  "TMETRO"
+ ],
+ "slr_labels": {
+  "throat-clearing": 54,
+  "lip-popping": 54,
+  "sneezing": 52,
+  "sighing": 51,
+  "screaming": 51,
+  "coughing": 50,
+  "yawning": 48,
+  "nose-blowing": 48,
+  "tongue-clicking": 47,
+  "teeth-chattering": 46,
+  "moaning": 45,
+  "lip-smacking": 45,
+  "panting": 44,
+  "teeth-grinding": 43,
+  "laughing": 25,
+  "crying": 24
+ },
+ "slr_speakers": 410,
+ "banks": {
+  "ev_main": {
+   "items": 52654,
+   "hours": 25.235595034722223,
+   "gb": 2.907140548,
+   "by": {
+    "nv/train": 18475,
+    "nv/val": 2253,
+    "vaani/train": 31021,
+    "vaani/val": 905
+   }
+  },
+  "ev_as": {
+   "items": 75343,
+   "hours": 25.87578809027778,
+   "gb": 2.980890788,
+   "by": {
+    "audioset/train": 67102,
+    "audioset/val": 8241
+   }
+  },
+  "ev_tts": {
+   "items": 6360,
+   "hours": 0.9589919270833333,
+   "gb": 0.11047587,
+   "by": {
+    "nvtts/val": 504,
+    "nvtts/train": 5856
+   }
+  },
+  "ev_slr": {
+   "items": 591,
+   "hours": 0.3673256770833333,
+   "gb": 0.042315918,
+   "by": {
+    "slr99/train": 503,
+    "slr99/val": 88
+   }
+  },
+  "ev_amb": {
+   "items": 3234,
+   "hours": 12.285873906250002,
+   "gb": 1.415332674,
+   "by": {
+    "dnc/train": 2613,
+    "dnc/val": 251,
+    "demand/train": 300,
+    "demand/val": 70
+   }
+  },
+  "beds_main": {
+   "items": 8862,
+   "hours": 17.986480277777776,
+   "gb": 2.072042528,
+   "by": {
+    "nv/train": 7872,
+    "nv/val": 990
+   }
+  },
+  "beds_tts": {
+   "items": 1243,
+   "hours": 2.6155641493055555,
+   "gb": 0.30131299,
+   "by": {
+    "nvtts/train": 1243
+   }
+  },
+  "real_main": {
+   "items": 37434,
+   "hours": 80.60870805555555,
+   "gb": 9.286123168,
+   "by": {
+    "nv/train": 15000,
+    "nv/val": 1875,
+    "vaani/train": 19999,
+    "vaani/val": 560
+   }
+  },
+  "real_as": {
+   "items": 33750,
+   "hours": 92.54514239583332,
+   "gb": 10.661200404,
+   "by": {
+    "audioset/train": 30000,
+    "audioset/val": 3750
+   }
+  },
+  "real_tts": {
+   "items": 4549,
+   "hours": 11.7600653125,
+   "gb": 1.354759524,
+   "by": {
+    "nvtts/val": 276,
+    "nvtts/train": 4273
+   }
+  },
+  "noise": {
+   "items": 2279,
+   "hours": 6.296714496527778,
+   "gb": 0.72538151,
+   "by": {
+    "dnc/-": 1499,
+    "demand/-": 780
+   }
+  }
+ },
+ "crops_split": {
+  "train": 125870,
+  "val": 12312
+ },
+ "real_clips": {
+  "nv/train": 15000,
+  "nv/val": 1875,
+  "vaani/train": 19999,
+  "vaani/val": 560,
+  "audioset/train": 30000,
+  "audioset/val": 3750,
+  "nvtts/val": 276,
+  "nvtts/train": 4273
+ },
+ "real_hours": {
+  "nv": 43.14744142361111,
+  "vaani": 37.46126663194445,
+  "audioset": 92.54514239583332,
+  "nvtts": 11.7600653125
+ },
+ "real_events": {
+  "nv": 16875,
+  "vaani": 32331,
+  "audioset": 132972,
+  "nvtts": 5160
+ },
+ "real_event_free": {
+  "audioset": 3375,
+  "nvtts": 1252
+ },
+ "tts_located": {
+  "breath": 4546,
+  "laugh": 879,
+  "cough": 224,
+  "sigh": 107,
+  "throat_clear": 187,
+  "sniff": 327,
+  "groan": 69,
+  "snore": 8,
+  "sneeze": 13
+ },
+ "tts_located_total": 6360,
+ "tts_real_clips": {
+  "val": 276,
+  "train": 4273
+ },
+ "tts_beds": 1243,
+ "ambient_crops": {
+  "dnc/machine/train": 778,
+  "dnc/machine/val": 68,
+  "dnc/music/train": 212,
+  "dnc/music/val": 17,
+  "dnc/tv_speaker/train": 982,
+  "dnc/tv_speaker/val": 115,
+  "dnc/vehicle/train": 641,
+  "dnc/vehicle/val": 51,
+  "demand/machine/train": 60,
+  "demand/machine/val": 14,
+  "demand/vehicle/train": 240,
+  "demand/vehicle/val": 56
+ },
+ "noise_chunks": {
+  "dnc": 1499,
+  "demand": 780
+ },
+ "beds_clean": {
+  "kept": 9645,
+  "total": 10105,
+  "kept_hours": 18.441733333333335
+ },
+ "noise_clean": {
+  "kept": 2102,
+  "total": 2279,
+  "kept_hours": 5.548322222222222
+ },
+ "pools": {
+  "train_real_audioset": {
+   "examples": 36000,
+   "gb": 3.691008,
+   "events": 142569,
+   "empty": 2007
+  },
+  "train_real_nv": {
+   "examples": 27000,
+   "gb": 2.768256,
+   "events": 26110,
+   "empty": 7807
+  },
+  "train_real_nvtts": {
+   "examples": 21000,
+   "gb": 2.153088,
+   "events": 21749,
+   "empty": 6626
+  },
+  "train_real_vaani": {
+   "examples": 27000,
+   "gb": 2.768256,
+   "events": 65179,
+   "empty": 258
+  },
+  "train_synth": {
+   "examples": 60000,
+   "gb": 6.15168,
+   "events": 83344,
+   "empty": 9582
+  },
+  "val_noisy": {
+   "examples": 600,
+   "gb": 0.0615168,
+   "events": 1429,
+   "empty": 65
+  },
+  "val_real_audioset": {
+   "examples": 800,
+   "gb": 0.0820224,
+   "events": 3729,
+   "empty": 32
+  },
+  "val_real_nv": {
+   "examples": 600,
+   "gb": 0.0615168,
+   "events": 584,
+   "empty": 173
+  },
+  "val_real_nvtts": {
+   "examples": 400,
+   "gb": 0.0410112,
+   "events": 558,
+   "empty": 46
+  },
+  "val_real_vaani": {
+   "examples": 800,
+   "gb": 0.0820224,
+   "events": 1777,
+   "empty": 15
+  },
+  "val_synth": {
+   "examples": 1000,
+   "gb": 0.102528,
+   "events": 1385,
+   "empty": 162
+  }
+ },
+ "train_examples": 171000,
+ "steps_per_epoch": 5343,
+ "feature_gb": 17.962905599999996,
+ "bank_gb": 31.856975921999993,
+ "splits": {
+  "nv": {
+   "train": 34890,
+   "val": 3828
+  },
+  "vaani_val_districts": 14,
+  "vaani_districts": 162,
+  "tts": {
+   "dev": 46,
+   "other": 2210,
+   "test": 359,
+   "train": 3641
+  }
+ }
+}
