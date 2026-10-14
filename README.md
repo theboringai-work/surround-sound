@@ -299,13 +299,6 @@ tests/                     pytest checks for the checkpoints, post-processing an
 
 The model card's license is `cc-by-nc-sa-4.0` (see [Data and licensing](#data-and-licensing)).
 
-## Tests
-
-```bash
-pip install pytest && pytest -q tests/
-```
-They check the checkpoint with both profiles, that `model.safetensors` matches `best.pt`, hysteresis and gap joining, and that the transcript merge keeps the ASR word order.
-
 
 ## Citation
 
