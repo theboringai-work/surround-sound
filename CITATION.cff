@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper."
+type: software
+title: "Surround Sound: Speech Event Detector"
+authors:
+  - family-names: "Bar"
+    given-names: "Ayush Kumar"
+    orcid: "https://orcid.org/0000-0003-3050-6478"
+  - family-names: "Ghosh"
+    given-names: "Promila"
+    orcid: "https://orcid.org/0000-0001-8611-7004"
+repository-code: "https://github.com/theboringai-work/surround-sound"
+url: "https://arxiv.org/abs/2610.14232"
