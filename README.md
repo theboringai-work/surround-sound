@@ -22,6 +22,28 @@
 - **Model / Demo:** [Open Surround Sound on Hugging Face](https://huggingface.co/spaces/theboringai-work/surround-sound)
 - **Source Code:** [GitHub Repository](https://github.com/theboringai-work/surround-sound)
 
+## Paper
+
+<p align="center">
+  <a href="https://arxiv.org/abs/2610.14232">
+    <img src="https://img.shields.io/badge/arXiv-2610.14232-B31B1B.svg" alt="arXiv paper" />
+  </a>
+  <a href="https://huggingface.co/theboringai-work/surround-sound">
+    <img src="https://img.shields.io/badge/🤗-Hugging%20Face-yellow.svg" alt="Hugging Face model" />
+  </a>
+</p>
+
+<p align="center">
+  <strong>Speech Event Detector: Timestamped Detection of Non-Verbal Vocalizations and Background Sounds for Rich Speech Transcription</strong>
+</p>
+
+<p align="center">
+  <a href="https://arxiv.org/abs/2610.14232">Read the paper</a> ·
+  <a href="https://huggingface.co/theboringai-work/surround-sound">Model weights</a> ·
+  <a href="https://huggingface.co/spaces/theboringai-work/surround-sound">Interactive demo</a>
+</p>
+
+
 
 Detects **54 kinds of non-verbal and background sounds**, with start and end times, in any audio, and merges them into a Whisper transcript. An illustrative example:
 
@@ -283,3 +305,20 @@ The model card's license is `cc-by-nc-sa-4.0` (see [Data and licensing](#data-an
 pip install pytest && pytest -q tests/
 ```
 They check the checkpoint with both profiles, that `model.safetensors` matches `best.pt`, hysteresis and gap joining, and that the transcript merge keeps the ASR word order.
+
+
+## Citation
+
+If you use this code or model in your research, please cite our paper:
+
+```bibtex
+@misc{bar2026speecheventdetector,
+  title         = {Speech Event Detector: Timestamped Detection of Non-Verbal Vocalizations and Background Sounds for Rich Speech Transcription},
+  author        = {Bar, Ayush Kumar and Ghosh, Promila},
+  year          = {2026},
+  eprint        = {2610.14232},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.SD},
+  url           = {https://arxiv.org/abs/2610.14232}
+}
+```
